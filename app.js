@@ -11,7 +11,9 @@ app.use([
 ])
 
 
-
+app.get("/",(req,res)=>{
+    res.json("Hellow study user backend")
+})
 app.post("/",async(req,res,next)=>{
     try {
         const obj={
